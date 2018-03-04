@@ -5,7 +5,10 @@ It is optimized to run the full Dronecode stack, suitable for academic and comme
 It features the currently most advanced processor and sensor technology from ST Microelectronics® and a NuttX
 real-time operating system, delivering incredible developer experience with its high performance, ease-of-use and flexibility.
 
-![Pixhawk4 Image](../../assets/hardware/hardware-pixhawk4.png)
+![Pixhawk4 Image](../../assets/hardware/hardware-pixhawk4.png
+
+Assembly/setup instructions for use with PX4 are provided here: [Pixhawk Wiring Quickstart](../assembly/quick_start_pixhawk4.md)
+
 
 The main features include:
 
