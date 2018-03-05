@@ -104,9 +104,6 @@ The mappings between PWM (MAIN)/AUX output ports and motor/servos for all suppor
 <span></span>
 > **Tip** If your frame is not listed in the reference then use a "generic" airframe of the correct type.
 
-<span></span>
-> **Note** The output rail must be separately powered, as discussed in the [Power](#power) section above.
-  
 <!-- INSERT image of the motor AUX/PWM ports? -->
 
 
