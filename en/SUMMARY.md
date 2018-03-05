@@ -10,6 +10,7 @@
 * [Basic Assembly](assembly/README.md)
   * [Mounting the Flight Controller](assembly/mount_and_orient_controller.md)
   * [Pixhawk Wiring Quickstart](assembly/quick_start_pixhawk.md)
+  * [Pixhawk 4 Wiring Quickstart](assembly/quick_start_pixhawk4.md)
   * [Pixhawk Mini Wiring Quickstart](assembly/quick_start_pixhawk_mini.md)
   * [Pixracer Wiring Quickstart](assembly/quick_start_pixracer.md)
 * [Basic Configuration](config/README.md)
