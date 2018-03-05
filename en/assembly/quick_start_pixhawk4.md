@@ -38,17 +38,33 @@ Attach the provided GPS with integrated compass (required) to the GPS port using
 
 ## Power
 
-Connect the output of a *Power Module* (PM) to one of the **POWER** ports using a 6-wire cable as shown. The PM input will be connected to your LiPo battery, while the main output will supply vehicle ESCs/motors via the power management board that comes in the kit.
+Connect the output of a *Power Management Board* (PM) that comes with the kit to one of the **POWER** bricks of Pixhawk 4 using a 6-wire cable as shown. The PM input **2~12S** will be connected to your LiPo battery. These connections, together with power supply and signal connections to the ESCs and servos, are explained in the table below.
 
-The power module supplies the flight controller with power from the battery and also sends information about the analog current and voltage supplied via the module (including both power to the flight controller and to motors etc). 
+The image below shows the power management board provided with Pixhawk 4.
 
-The image below shows typical power-supply wiring when using Pixhawk 4.
+![Pixhawk 4 - Power Management Board](../../images/pixhawk_4_power_management_board.jpg)
 
-![Pixhawk 4 - Power Module](../../images/pixhawk_4_power_module.jpg)
+| PIN&Connector | Function |    
+| --- | --------------------- | 
+| I/O PWM-IN   | connect to I/O PWM-OUT port of Pixhawk4 (J17)          |
+| M1           |  PWM OUT 1: connect signal wire to ESC of motor 1 here |
+| M2           |  PWM OUT 2: connect signal wire to ESC of motor 2 here |
+| M3           |  PWM OUT 3: connect signal wire to ESC of motor 3 here |
+| M4           |  PWM OUT 4: connect signal wire to ESC of motor 4 here |
+| M5           |  PWM OUT 5: connect signal wire to ESC of motor 5 here |
+| M6           |  PWM OUT 6: connect signal wire to ESC of motor 6 here |
+| M7           |  PWM OUT 7: connect signal wire to ESC of motor 7 here |
+| M8           |  PWM OUT 8: connect signal wire to ESC of motor 8 here |
+| FMU PWM-IN   |  connect to AUX-OUT port of Pixhawk4(J26)              |   
+| FMU PWM-OUT  |  AUX output: connect signal wires to ESC or signal,+,- wires to servos here |                                         
+| PWM&ADC-OUT  |  connect to PWM&ADC IN port of Pixhawk4(J22)           |  
+| PWM&ADC-IN   |  PWM&ADC input                                         |  
+| B+           |  connect to ESC B+ to power the ESC                    |  
+| GND          |  connect to ESC Ground                                 |  
+| PWR1         |  5.3v output 3A,connect to Pixhawk4 power brick1       | 
+| PWR2         |  5.3v output 3A,connect to Pixhawk4 power brick2       | 
+| 2~12S        |  Power Input, support to 12S LiPo Battery              | 
 
-> **Warning** The power module supplies the flight controller itself, but cannot power servos and other hardware connected to the controller's PWM OUT and AUX OUT ports. For copter this does not matter because the motors are separately powered. 
-
-For vehicles, such as plane or VTOL, where PWM OUT or AUX OUT is attached to devices that draw power (e.g. a servo used in a plane) then you will need to power the PWM OUT or AUX OUT using a [BEC](https://en.wikipedia.org/wiki/Battery_eliminator_circuit) that can be connected to the pins VDD_SERVO and GND of Pixhawk output ports.
 
 <!-- It would be good to have real example of this powering --> 
 
